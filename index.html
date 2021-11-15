@@ -15,7 +15,7 @@
 <body>
   <header>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container-fluid">
+      <div class="container-xl">
         <a class="navbar-brand" href="#home">It's my life</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -56,48 +56,121 @@
       </div>
     </nav>
   </header>
-  <main>
+  <main class="container-xl px-5">
     <section id="home">
+      <h1 class="display-1 fw-bold">It's my life</h1>
       
     </section>
     <section id="about">
+      <h2 class="display-5 fw-bold">About project</h2>
       
     </section>
   </main>
-  <section id="lists">
+  <section id="lists" class="container-xl px-5">
     <section id="toDoList">
+      <h2 class="display-5 fw-bold">To-Do List</h2>
 
     </section>
     <section id="filmsList">
-
+      <h2 class="display-5 fw-bold">Films List</h2>
+      <div class="my-3">
+        <button  class="btn btn-primary btn-lg" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFilms" aria-expanded="false" aria-controls="collapseFilms">Add Film</button>
+      </div>
+      <div id="collapseFilms" class="collapse pt-5">
+        <div class="card">
+          <div class="card-body">
+            <form id="filmForm" class="row">
+              <div class="mb-3 col-md-4 col-lg-4">
+                <label for="filmTitle" class="form-label">Film title </label>
+                <input type="text" class="form-control" id="filmTitle" placeholder="Add a new film title">
+              </div>
+              <div class="mb-3 col-md-4 col-lg-4">
+                <label for="filmComment" class="form-label">Comment</label>
+                <input type="text" class="form-control" id="filmComment" placeholder="Add a new comment">
+              </div>              
+              <div class="col-12">
+                <button id="filmButton" type="submit" class="btn btn-primary">Submit</button>
+              </div>              
+            </form>
+          </div>
+        </div>
+      </div>
+      <div id="filmsRow" class="row align-items-start">
+        <div class="col-lg-4 col-md-6 py-3">
+          <div class="card h-100">
+            <div class="card-body">
+              <h4 class="card-title">Loki</h4>
+              <p>6 series</p>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">Film viewed</label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 py-3">
+          <div class="card h-100">
+            <div class="card-body">
+              <h4 class="card-title">WandaVision</h4>
+              <p>9 series</p>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">Film viewed</label>
+              </div>
+            </div>
+          </div>
+        </div>        
+        <div class="col-lg-4 col-md-6 py-3">
+          <div class="card h-100">
+            <div class="card-body">
+              <h4 class="card-title">Hawkeye</h4>
+              <p>Release date: November 24, 2021</p>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">Film viewed</label>
+              </div>
+            </div>
+          </div>
+        </div>        
+      </div>
     </section>    
     <section id="booksList">
+      <h2 class="display-5 fw-bold">Books List</h2>
 
     </section>
     <section id="shoppingList">
+      <h2 class="display-5 fw-bold">Shopping List</h2>
 
     </section> 
     <section id="travelList">
+      <h2 class="display-5 fw-bold">Travel List</h2>
 
     </section>
     <section id="dreamsList">
+      <h2 class="display-5 fw-bold">Dreams List</h2>
 
     </section> 
     <section id="goalsList">
+      <h2 class="display-5 fw-bold">Goals List</h2>
 
     </section>          
   </section>
-  <section id="tracker">
+  <section id="tracker" class="container-xl px-5">
+    <h2 class="display-5 fw-bold">Tracker</h2>
       
   </section>
-  <section id="lifeBalance">
+  <section id="lifeBalance" class="container-xl px-5">
+    <h2 class="display-5 fw-bold">Life Balance</h2>
       
   </section>
-  <section id="music">
+  <section id="music" class="container-xl px-5">
+    <h2 class="display-5 fw-bold">Music</h2>
       
   </section>
 
   <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+<script src="js/filmsList.js"></script>
+
 </body>
 </html>

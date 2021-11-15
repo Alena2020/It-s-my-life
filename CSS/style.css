@@ -1,3 +1,8 @@
 body {
   font-family: "Bubblegum Sans", cursive;
 }
+
+section {
+  margin-bottom: 100px;
+  margin-top: 50px;
+}
