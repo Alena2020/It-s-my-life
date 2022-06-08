@@ -14,7 +14,7 @@
 </head>
 <body>
   <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-info">
       <div class="container-xl">
         <a class="navbar-brand" href="#home">It's my life</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -32,7 +32,7 @@
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Lists
               </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <ul class="dropdown-menu bg-info" aria-labelledby="navbarDropdown">
                 <li><a class="dropdown-item" href="#toDoList">To-Do List</a></li>
                 <li><a class="dropdown-item" href="#filmsList">Films List</a></li>
                 <li><a class="dropdown-item" href="#booksList">Books List</a></li>
@@ -57,8 +57,14 @@
     </nav>
   </header>
   <main class="container-xl px-5">
-    <section id="home">
-      <h1 class="display-1 fw-bold">It's my life</h1>
+    <section id="home"  class="container-fluid p-0 d-flex flex-column-reverse flex-md-row">
+      <div class="container-fluid m-auto p-0">
+        <h1 class="display-1 fw-bold">It's my life</h1>
+        <p class="col-md-8 py-3 lead fs-4">My life is a canvas, on which i paint my dreams.<br> Everyone sees the world in one’s own way.<br> Everyone is the creator of one’s own fate.<br> Follow your heart.<br> Live without regrets.<br> Dreams come true!<br> My life is a canvas, I paint it with bright colors. <br> P.S.<br>  My favorite flower is lotus.<br> My favorite game is chess. Do you want to play chess with me?</p>
+      </div>      
+      <div class="container-fluid p-0">
+        <img src="img/lotus.png" class="img-fluid w-100" alt="lotus">
+      </div>
       
     </section>
     <section id="about">
@@ -71,7 +77,7 @@
       <h2 class="display-5 fw-bold">To-Do List</h2>
 
     </section>
-    <section id="filmsList">
+    <section id="filmsList"  class="container-fluid p-0">
       <h2 class="display-5 fw-bold">Films List</h2>
       <div class="my-3">
         <button  class="btn btn-primary btn-lg" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFilms" aria-expanded="false" aria-controls="collapseFilms">Add Film</button>
