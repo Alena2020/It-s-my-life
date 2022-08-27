@@ -11,16 +11,16 @@ let film = {
   comment: ''
 };
 
-function loadLocalStorage() {
+function loadLocalStorageForFilms() {
     if (localStorage.getItem("films")) {
         filmsList = JSON.parse(localStorage.getItem("films")) || [];
-        render();
+        renderFilms();
     }
 }
 
-loadLocalStorage();
+loadLocalStorageForFilms();
 
-function updateLocalStorage() {
+function updateLocalStorageForFilms() {
     localStorage.setItem("films", JSON.stringify(filmsList));
 }
 
@@ -28,12 +28,12 @@ function addFilm(newFilm) {
   if (filmTitle.value !== '' && filmComment.value !== '') {
       film = {...newFilm}; 
       filmsList.push(film);
-      render();
-      updateLocalStorage();
+      renderFilms();
+      updateLocalStorageForFilms();
   }
 }
 
-function render() {
+function renderFilms() {
   let filmTemplate = '';
 
   filmsList.forEach(function(item, index) {
@@ -42,8 +42,8 @@ function render() {
     filmComment.value = '';
 
     filmTemplate += `
-        <div class="col-lg-4 col-md-6 py-3">
-          <div class="card h-100">
+        <div class="col-lg-4 col-md-6 py-3 text-primary mb-3">
+          <div class="card h-100 border-info">
             <div class="card-body">
               <h4 class="card-title">${item.title}</h4>
               <p>${item.comment}</p>
