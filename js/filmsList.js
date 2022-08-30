@@ -48,7 +48,7 @@ function renderFilms() {
               <h4 class="card-title">${item.title}</h4>
               <p>${item.comment}</p>
               <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" onclick="checkedFilm(${index})" ${item.checked ? 'checked' : ''}>
                 <label class="form-check-label" for="flexCheckDefault">Film viewed</label>
               </div>
             </div>
@@ -60,10 +60,15 @@ function renderFilms() {
     films.innerHTML = filmTemplate;  
 }
 
+function checkedFilm(index) {
+    filmsList[index].checked = !filmsList[index].checked;
+    renderFilms();
+    updateLocalStorageForFilms();
+}
+
 
 filmButton.addEventListener('click', (event) => {
   event.preventDefault();
 
   addFilm({title: filmTitle.value, comment: filmComment.value});
 });
-
