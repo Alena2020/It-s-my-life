@@ -8,7 +8,8 @@ const filmButton = document.getElementById('filmButton');
 let filmsList = [];
 let film = {
   title: '',
-  comment: ''
+  comment: '',
+  checked: ''
 };
 
 function loadLocalStorageForFilms() {
@@ -70,5 +71,5 @@ function checkedFilm(index) {
 filmButton.addEventListener('click', (event) => {
   event.preventDefault();
 
-  addFilm({title: filmTitle.value, comment: filmComment.value});
+  addFilm({title: filmTitle.value, comment: filmComment.value, checked: false});
 });
