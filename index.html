@@ -192,7 +192,59 @@
       </section> 
       <section id="travelList" class="container-xl pt-5 shadow-sm p-3 mb-5 bg-body rounded  bg-info bg-opacity-10">
         <h2 class="display-5 fw-bold">Travel List</h2>
-
+        <div class="my-3">
+          <button  class="btn btn-primary btn-lg" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTravels" aria-expanded="false" aria-controls="collapseTravels">Add Travel</button>
+        </div>
+        <div id="collapseTravels" class="collapse pt-5">
+          <div class="card">
+            <div class="card-body">
+              <form id="travelForm" class="row">
+                <div class="mb-3 col-md-4 col-lg-4">
+                  <label for="travelTitle" class="form-label">Travel title</label>
+                  <input type="text" name="title" class="form-control" id="travelTitle" placeholder="Add a new travel">
+                </div>
+                <div class="mb-3 col-md-4 col-lg-4">
+                  <label for="country" class="form-label">Country</label>
+                  <input type="text" name="country" class="form-control" id="country" placeholder="Add a country">
+                </div> 
+                <div class="mb-3 col-md-4 col-lg-4">
+                  <label for="city" class="form-label">City</label>
+                  <input type="text" name="city" class="form-control" id="city" placeholder="Add a city">
+                </div> 
+                <div class="mb-3 col-md-4 col-lg-4">
+                  <label for="purpose" class="form-label">What is the purpose of your visit?</label>
+                  <input type="text" name="purpose" class="form-control" id="purpose" placeholder="Add a purpose">
+                </div> 
+                <div class="mb-3 col-md-4 col-lg-4">
+                  <label for="address" class="form-label">Where would you like to go?</label>
+                  <input type="text" name="address" class="form-control" id="address" placeholder="Where would you like to go?">
+                </div> 
+                <div class="mb-3 col-md-4 col-lg-4">
+                  <label for="homeAddress" class="form-label">Where will you be staying?</label>
+                  <input type="text" name="home" class="form-control" id="homeAddress" placeholder="Where will you be staying?">
+                </div>
+                <div class="mb-3 col-md-4 col-lg-4">
+                  <label for="travelDate" class="form-label">When would you like to travel?</label>
+                  <input type="date" name="date" class="form-control" id="travelDate" placeholder="">
+                </div>
+                <div class="mb-3 col-md-4 col-lg-4">
+                  <label for="travelBackDate" class="form-label">When will you be coming back?</label>
+                  <input type="date" name="date" class="form-control" id="travelBackDate" placeholder="">
+                </div>              
+                <div class="mb-3 col-md-4 col-lg-4">
+                  <label for="travelComment" class="form-label">Comment</label>
+                  <input type="text" name="comment" class="form-control" id="travelComment" placeholder="Add a new comment">
+                </div>              
+                <div class="col-12">
+                  <button id="travelButton" type="submit" class="btn btn-primary">Submit</button>
+                </div>              
+              </form>
+            </div>
+          </div>
+        </div>
+        <div id="travelsRow" class="row align-items-start">
+          
+        </div>
       </section>
       <section id="dreamsList" class="container-xl pt-5 shadow-sm p-3 mb-5 bg-body rounded  bg-info bg-opacity-10">
         <h2 class="display-5 fw-bold">Dreams List</h2>
