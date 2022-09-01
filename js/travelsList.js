@@ -73,7 +73,7 @@ function renderTravels() {
               <p class="col-md-12 fw-bolder">Purpose: ${item.purpose}</p>
               <p class="col-md-12 fw-bolder">Place: ${item.address}</p> 
               <p class="col-md-12 fw-bolder">Housing address: ${item.homeAddress}</p> 
-              <p class="col-md-12 fw-bolder">Travel date": ${item.date}</p>                 
+              <p class="col-md-12 fw-bolder">Travel date: ${item.date}</p>                 
               <p class="col-md-12 fw-bolder">Return date: ${item.dateBack}</p> 
               <p class="col-md-12 fw-bolder">Comment: ${item.comment}</p>            
               <div class="row g-0 d-flex align-items-center">
