@@ -248,7 +248,31 @@
       </section>
       <section id="dreamsList" class="container-xl pt-5 shadow-sm p-3 mb-5 bg-body rounded  bg-info bg-opacity-10">
         <h2 class="display-5 fw-bold">Dreams List</h2>
-
+        <div class="my-3">
+          <button  class="btn btn-primary btn-lg" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDreams" aria-expanded="false" aria-controls="collapseDreams">Add Dream</button>
+        </div>
+        <div id="collapseDreams" class="collapse pt-5">
+          <div class="card">
+            <div class="card-body">
+              <form id="dreamForm" class="row">
+                <div class="mb-3 col-md-4 col-lg-4">
+                  <label for="dreamTitle" class="form-label">Dream title </label>
+                  <input type="text" name="title" class="form-control" id="dreamTitle" placeholder="Add a new dream">
+                </div>
+                <div class="mb-3 col-md-4 col-lg-4">
+                  <label for="dreamComment" class="form-label">Comment</label>
+                  <input type="text" name="comment" class="form-control" id="dreamComment" placeholder="Add a new comment">
+                </div>              
+                <div class="col-12">
+                  <button id="dreamButton" type="submit" class="btn btn-primary">Submit</button>
+                </div>              
+              </form>
+            </div>
+          </div>
+        </div>
+        <div id="dreamsRow" class="row align-items-start">
+          
+        </div>
       </section> 
       <section id="goalsList" class="container-xl pt-5 shadow-sm p-3 mb-5 bg-body rounded  bg-info bg-opacity-10">
         <h2 class="display-5 fw-bold">Goals List</h2>
