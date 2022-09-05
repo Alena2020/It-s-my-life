@@ -276,7 +276,35 @@
       </section> 
       <section id="goalsList" class="container-xl pt-5 shadow-sm p-3 mb-5 bg-body rounded  bg-info bg-opacity-10">
         <h2 class="display-5 fw-bold">Goals List</h2>
-
+        <div class="my-3">
+          <button  class="btn btn-primary btn-lg" type="button" data-bs-toggle="collapse" data-bs-target="#collapseGoalsList" aria-expanded="false" aria-controls="collapseGoalsList">Add Goal</button>
+        </div>
+        <div id="collapseGoalsList" class="collapse pt-5">
+          <div class="card">
+            <div class="card-body">
+              <form id="goalsForm" class="row">
+                <div class="mb-3 col-md-4 col-lg-4">
+                  <label for="goalTitle" class="form-label">Goal</label>
+                  <input type="text" name="title" class="form-control" id="goalTitle" placeholder="Add a new goal">
+                </div>
+                <div class="mb-3 col-md-4 col-lg-4">
+                  <label for="goalDate" class="form-label">Date</label>
+                  <input type="date" name="date" class="form-control" id="goalDate" placeholder="">
+                </div> 
+                <div class="mb-3 col-md-4 col-lg-4">
+                  <label for="goalComment" class="form-label">Comment</label>
+                  <input type="text" name="comment" class="form-control" id="goalComment" placeholder="Add a new comment">
+                </div>             
+                <div class="col-12">
+                  <button id="goalButton" type="submit" class="btn btn-primary">Submit</button>
+                </div>              
+              </form>
+            </div>
+          </div>
+        </div>
+        <div id="goalsRow" class="row align-items-start">
+          
+        </div>
       </section>          
     </section>
     <section id="tracker" class="container-xl px-5 pt-5">
