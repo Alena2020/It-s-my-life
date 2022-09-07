@@ -309,7 +309,27 @@
     </section>
     <section id="tracker" class="container-xl px-5 pt-5">
       <h2 class="display-5 fw-bold">Tracker</h2>
-        
+        <div class="my-3">
+          <button  class="btn btn-primary btn-lg" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTrackers" aria-expanded="false" aria-controls="collapseTrackers">Add Tracker</button>
+        </div>
+        <div id="collapseTrackers" class="collapse pt-5">
+          <div class="card">
+            <div class="card-body">
+              <form id="trackerForm" class="row">
+                <div class="mb-3 col-md-4 col-lg-4">
+                  <label for="trackerTitle" class="form-label">Tracker</label>
+                  <input type="text" name="title" class="form-control" id="trackerTitle" placeholder="Add a new tracker">
+                </div>              
+                <div class="col-12">
+                  <button id="trackerButton" type="submit" class="btn btn-primary">Submit</button>
+                </div>              
+              </form>
+            </div>
+          </div>
+        </div>
+        <div id="trackersRow" class="row align-items-start">
+          
+        </div>        
     </section>
     <section id="lifeBalance" class="container-xl px-5 pt-5">
       <h2 class="display-5 fw-bold">Life Balance</h2>     
