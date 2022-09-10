@@ -375,8 +375,13 @@
     </section>
     <section id="music" class="container-xl px-5 pt-5">
       <h2 class="display-5 fw-bold">Music</h2>
-      <img src="img/flower.png" class="img-fluid w-50 h-50 alt="flower">
-        
+      <div class="d-flex flex-column align-items-center">
+        <img src="img/music_notes.png" class="img-fluid w-50 h-50" alt="music_notes">      
+        <audio id="player" controls>
+
+        </audio> 
+        <button id="nextButton" type="button" class="btn btn-primary col-md-2"  style="margin: 20px 1px;">Next</button>
+      </div>           
     </section>
 </main>
 <footer id=footer class="footer bg-info bg-opacity-50">
@@ -406,5 +411,6 @@
 <script src="js/goalsList.js"></script>
 <script src="js/tracker.js"></script>
 <script src="js/lifeBalance.js"></script>
+<script src="js/music.js"></script>
 </body>
 </html>
